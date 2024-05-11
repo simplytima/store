@@ -5,6 +5,10 @@ import Home from './Home/homeContainer/home'
 import Catalog from './catalog/catalog'
 import ItemProduct from './productItem/itemProduct'
 import MyCart from './cart/myCart'
+import Store from './store/store'
+import Login from './authentication/login'
+import SignupClient from './authentication/clientSign'
+import SignupMerchant from './authentication/signupMerchant'
 
 function App() {
   
@@ -18,6 +22,12 @@ function App() {
             <Route path='/catalog' element={<Catalog/>} />
             <Route path='/item' element={<ItemProduct/>} />
             <Route path='/cart' element={<MyCart/>} />
+            <Route path='/store' element={<Store/>} />
+          </Route>
+          <Route >
+            <Route path='/logIn' element={<Login/>} />
+            <Route path='/client' element={<SignupClient/>} />
+            <Route path='/merchant' element={<SignupMerchant/>} />
           </Route>
         </Routes>
       </BrowserRouter>

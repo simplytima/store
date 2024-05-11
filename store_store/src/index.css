@@ -5,6 +5,7 @@
 }
 
 body{
+  /* background-image: url('./components/img/bgLogin.jpg'); */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,6 +22,7 @@ body{
   --beige: #dcb796;
   --lightbeige: #ffe0d8;
   --footer: #f6f6f6;
+  --blue: rgb(24, 74, 180);
 }
 
 
@@ -2614,4 +2616,752 @@ body{
 }
 .myCart .recommend .products .item .info p{
   font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.loginContainer{
+
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.loginContainer img{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+.loginContainer form{
+  margin: auto;
+  padding: 20px;
+  margin-top: 60px;
+  border: none;
+  width: 30%;
+  /* margin-left: 65%; */
+  right: 150px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.525);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.164); */
+  position: absolute;
+  z-index: 10;
+}
+
+.loginContainer form h2{    
+  text-align: center;
+  margin: 20px 0 5px 0;
+}
+
+
+
+.loginContainer form .userName{
+  align-items: center;
+  margin-top: 30px;
+}
+
+
+.loginContainer form .userName input{
+  width: 100%;
+  height: 35px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 25px 0 25px 15px;
+  outline: none;
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+.loginContainer form input::placeholder{
+  color: #000000;
+  font-size: 16px;
+}
+
+
+
+.loginContainer form .pw{
+  align-items: center;
+  margin: 10px 0 5px 0;
+}
+
+
+
+.loginContainer form .pw input{
+  width: 100%;
+  height: 35px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 25px 0 25px 15px;
+  outline: none;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+
+.loginContainer form .forget{
+  text-align: right;
+}
+
+.loginContainer form .forget strong a{
+  text-decoration: none;
+  font-size: 12px;
+  color: var(--blue);
+  padding-right: 10px;
+}
+
+
+
+.loginContainer form button{
+  width: 100%;
+  padding: 15px 0 15px 0;
+  border: none;
+  background-color: rgb(255, 145, 0);
+  color: black;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+
+.loginContainer form .create{
+  margin-top: 8px;
+  text-align: center;
+}
+
+.loginContainer form .create a{
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--blue);
+}
+
+
+.loginContainer form .socialMedia{
+  margin-top: 15px;
+}
+
+.loginContainer form .socialMedia p{
+  color: rgb(105, 105, 105);
+  text-align: center;
+}
+
+
+.loginContainer form .socialMedia .media{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.loginContainer form .socialMedia .media ion-icon{
+  font-size: 30px;
+  color: rgb(27, 27, 27);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.signupClient{
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.signupClient img{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+.signupClient form{
+  margin: auto;
+  padding: 20px;
+  margin-top: 60px;
+  border: none;
+  width: 30%;
+  right: 150px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.525);
+  position: absolute;
+  z-index: 10;
+}
+
+.signupClient form h2{    
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+
+.signupClient form .form {
+  overflow-x: hidden;
+  /* height: 260px; */
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* .signupClient form .form::-webkit-scrollbar{
+  width: 1px;
+}
+.signupClient form .form::-webkit-scrollbar-thumb{
+  background-color: rgba(255, 255, 255, 0.525);
+} */
+
+
+
+.signupClient form .form .fullName{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.signupClient form .form .fullName input{
+  width: 100%;
+  margin: 0 5px;
+  height: 35px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0 20px 15px;
+  outline: none;
+  font-size: 17px;
+}
+
+.signupClient form .form input::placeholder{
+  color: #000000;
+  font-size: 16px;
+}
+
+
+.signupClient form .form .phone{
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+.signupClient form .form .phone input{
+  width: 100%;
+  margin: 0 5px;
+  height: 35px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0 20px 15px;
+  outline: none;
+  font-size: 17px;
+}
+
+
+.signupClient form .form .mail{
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.signupClient form .form .mail input{
+  width: 100%;
+  margin: 0 5px;
+  height: 35px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0 20px 15px;
+  outline: none;
+  font-size: 17px;
+}
+
+
+.signupClient form .form .username{
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.signupClient form .form .username input{
+  width: 100%;
+  margin: 0 5px;
+  height: 35px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0 20px 15px;
+  outline: none;
+  font-size: 17px;
+}
+
+
+.signupClient form .form .pw{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+.signupClient form .form .pw input{
+  width: 100%;
+  margin: 0 5px;
+  height: 35px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0 20px 15px;
+  outline: none;
+  font-size: 17px;
+}
+
+
+/* .signupClient form .form .cityPostal{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.signupClient form .form .cityPostal input{
+  width: 100%;
+  margin: 0 5px;
+  height: 35px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0 20px 15px;
+  outline: none;
+  font-size: 17px;
+}
+
+
+.signupClient form .form .adr{
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.signupClient form .form .adr input{
+  width: 100%;
+  margin: 0 5px;
+  height: 35px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0 20px 15px;
+  outline: none;
+  font-size: 17px;
+} */
+
+
+.signupClient form button{
+  width: 100%;
+  padding: 15px 0 15px 0;
+  border: none;
+  background-color: rgb(255, 145, 0);
+  color: black;
+  margin: 20px 0 7px 5px;
+  font-size: 17px;
+}
+
+
+.signupClient form .log{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-left: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.signupClient form .log p{
+  font-size: 14px;
+}
+
+.signupClient form .log a{
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--blue);
+  padding-left: 5px;
+}
+
+
+.signupClient form .socialMedia{
+  margin-top: 15px;
+}
+
+.signupClient form .socialMedia p{
+  color: rgb(105, 105, 105);
+  text-align: center;
+}
+
+
+.signupClient form .socialMedia .media{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.signupClient form .socialMedia .media ion-icon{
+  font-size: 30px;
+  color: rgb(27, 27, 27);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.signupMerchant{
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.signupMerchant img{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+.signupMerchant form{
+  margin: auto;
+  padding: 20px;
+  top: 45px;
+  border: none;
+  width: 30%;
+  right: 150px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.525);
+  position: absolute;
+  z-index: 10;
+}
+
+.signupMerchant form h2{    
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+
+.signupMerchant form .form {
+  overflow-x: hidden;
+  /* height: 260px; */
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* .signupMerchant form .form::-webkit-scrollbar{
+  width: 1px;
+}
+.signupMerchant form .form::-webkit-scrollbar-thumb{
+  background-color: rgba(255, 255, 255, 0.525);
+} */
+
+
+
+.signupMerchant form .form .fullName{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.signupMerchant form .form .fullName input{
+  width: 100%;
+  margin: 0 5px;
+  height: 35px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0 20px 15px;
+  outline: none;
+  font-size: 17px;
+}
+
+.signupMerchant form .form input::placeholder{
+  color: #000000;
+  font-size: 16px;
+}
+
+
+.signupMerchant form .form .phone{
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+.signupMerchant form .form .phone input{
+  width: 100%;
+  margin: 0 5px;
+  height: 35px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0 20px 15px;
+  outline: none;
+  font-size: 17px;
+}
+
+
+.signupMerchant form .form .mail{
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.signupMerchant form .form .mail input{
+  width: 100%;
+  margin: 0 5px;
+  height: 35px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0 20px 15px;
+  outline: none;
+  font-size: 17px;
+}
+
+
+.signupMerchant form .form .storename{
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.signupMerchant form .form .storename input{
+  width: 100%;
+  margin: 0 5px;
+  height: 35px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0 20px 15px;
+  outline: none;
+  font-size: 17px;
+}
+
+
+.signupMerchant form .form .username{
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.signupMerchant form .form .username input{
+  width: 100%;
+  margin: 0 5px;
+  height: 35px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0 20px 15px;
+  outline: none;
+  font-size: 17px;
+}
+
+
+
+
+
+.signupMerchant form .form .pw{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+.signupMerchant form .form .pw input{
+  width: 100%;
+  margin: 0 5px;
+  height: 35px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0 20px 15px;
+  outline: none;
+  font-size: 17px;
+}
+
+
+
+.signupMerchant form button{
+  width: 100%;
+  padding: 15px 0 15px 0;
+  border: none;
+  background-color: rgb(255, 145, 0);
+  color: black;
+  margin: 20px 0 7px 5px;
+  font-size: 17px;
+}
+
+
+.signupMerchant form .log{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-left: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.signupMerchant form .log p{
+  font-size: 14px;
+}
+
+.signupMerchant form .log a{
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--blue);
+  padding-left: 5px;
+}
+
+
+.signupMerchant form .socialMedia{
+  margin-top: 15px;
+}
+
+.signupMerchant form .socialMedia p{
+  color: rgb(105, 105, 105);
+  text-align: center;
+}
+
+
+.signupMerchant form .socialMedia .media{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  margin: auto;
+  margin-top: 15px;
+  /* margin-bottom: 10px; */
+}
+
+.signupMerchant form .socialMedia .media ion-icon{
+  font-size: 30px;
+  color: rgb(27, 27, 27);
+  border-radius: 50%;
+  padding: 5px;
 }
