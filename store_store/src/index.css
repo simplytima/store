@@ -52,9 +52,7 @@ body{
 
 
 
-.navbar{
-  /* background-color: beige; */
-}
+
 
 
 
@@ -63,7 +61,6 @@ body{
   justify-content: space-around;
   align-items: center;
   margin: auto;
-  /* width: 80%; */
   background-color: var(--veryLight);
   padding: 5px;
   color: var(--dark);
@@ -133,6 +130,10 @@ body{
 
 
 
+.navbar .nav .navbar .menu a{
+  color: #000000;
+}
+
 .navbar .nav .navbar .menu ul{
   list-style-type: none;
   display: flex;
@@ -140,18 +141,27 @@ body{
   height: 40px;
 }
 
+.navbar .nav .navbar .menu ul a{
+  text-decoration: none;
+}
+
+
 .navbar .nav .navbar .menu ul li{
   display: flex;
   align-items: center;
-  margin: 0 25px ;
+  margin: 0 20px ;
   font-size: 18px;
   height: 100%;
   font-weight: 500;
 }
+
 .navbar .nav .navbar .menu ul li:last-child{
   color: var(--navPoint);
 }
 
+.navbar .nav .navbar .menu ul a li p{
+  color: #000000;
+}
 
 
 
@@ -181,51 +191,6 @@ body{
 
 
 
-.navbar .nav .search{
-  display: none;
-}
-
-
-
-
-.navbar .nav .search.active{
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding: 10px;
-  justify-content: space-around;
-}
-
-.navbar .nav .search.active input{
-  height: 30px;
-  width: 500px;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  padding-left: 10px;
-  font-size: 17px;
-  border: 0.5px solid rgb(183, 183, 183);
-
-}
-
-.navbar .nav .search.active button{
-  height: 30px;
-  width: 40px;
-  background-color: var(--navPoint);
-  align-items: center;
-  justify-content: center;
-  border: 0.5px solid rgb(183, 183, 183);
-  border-left: none;
-  left: calc(100% - 550px);
-  position: absolute;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.navbar .nav .search.active button ion-icon{
-  color: white;
-  font-size: 18px;
-}
 
 
 
@@ -239,9 +204,11 @@ body{
 
 
 
-.homeContainer{
-  /* background-color: aliceblue; */
-}
+
+
+
+
+
 
 .homeContainer .imgCategory{
   margin: auto;
@@ -281,7 +248,6 @@ body{
   margin: 40px;
   padding: 50px;
   width: 600px;
-  /* background-color: blue; */
 }
 .homeContainer .imgCategory .imgPub .desc button:first-child{
   border: none;
@@ -436,11 +402,6 @@ body{
 
 
 
-/* .homeContainer .category .next{
-  width: 80%;
-  margin: auto;
-  position: relative;
-} */
 .homeContainer .category .CAT ion-icon{
   position: absolute;
   top: 90px;
@@ -529,7 +490,6 @@ body{
 .homeContainer .suggestion .products .productItem{
   border-radius: 15px;
   position: relative;
-  /* background-color: aquamarine; */
 }
 .homeContainer .suggestion .products .productItem .img{
   height: 200px;
@@ -651,7 +611,6 @@ body{
   margin-top: 100px;
 }
 .homeContainer .salePub .desc h1{
-  /* text-align: center; */
   width: 350px;
   margin-bottom: 20px;
   margin-left: 90px;
@@ -2795,9 +2754,10 @@ body{
   background-color: white;
   overflow: hidden;
 }
-.store .headerMain .main .productItem .product:hover{
 
-}
+/* .store .headerMain .main .productItem .product:hover{
+
+} */
 
 
 
@@ -3498,3 +3458,7 @@ body{
   border-radius: 50%;
   padding: 5px;
 }
+
+
+
+

@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { iconCart, iconHeart, iconSearch, iconUser } from "../../../icon"
+import { iconCart, iconHeart,  iconUser } from "../../../icon"
+import { Link } from "react-router-dom";
 
 
 
@@ -7,13 +7,6 @@ import { iconCart, iconHeart, iconSearch, iconUser } from "../../../icon"
 
 
 function Nav(){
-
-    const [searchActive, setSearchActive] = useState(false);
-
-    const showSearch = () => {
-        setSearchActive(!searchActive);
-    };
-
 
 
 
@@ -27,15 +20,19 @@ function Nav(){
             </div>
             <div className="menu">
                 <ul>
-                    <li>Shorts</li>
-                    <li>Brands</li>
-                    <li>New</li>
+                    <Link to='/catalog'>
+                        <li>
+                            <p>Catalog</p>
+                        </li>
+                    </Link>
+                    <li><p>Shorts</p></li>
+                    <li><p>Brands</p></li>
+                    <li><p>New</p></li>
                     <li>TimaBusiness</li>
                 </ul>
             </div>
             <div className="icon">
                 <ul>
-                    <li className={searchActive ? "active" : ""}  onClick={showSearch}>{iconSearch}</li>
                     <li>{iconHeart}</li>
                     <li>{iconUser}</li>
                     <li>{iconCart}</li>
@@ -43,12 +40,6 @@ function Nav(){
             </div>
         </div>
 
-        <div className={`search ${searchActive ? 'active' : ''}`}>
-            <input type="text" placeholder="Search..." />
-            <button>
-                <ion-icon name="search-outline"></ion-icon>
-            </button>
-        </div>
     </div>
 }
 
