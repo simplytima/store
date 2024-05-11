@@ -1,8 +1,11 @@
-import ad from './ad.webp'
+
+import ad from './img/ad.webp'
 
 
 
 function Ads(){
+
+
     return <div className="ads">
         <div className="img">
             <img src={ad} alt="" />
@@ -11,6 +14,7 @@ function Ads(){
                 <p>Here you will find a wide selection of beautiful products</p>
             </div>            
         </div>
+
         
 
     </div>

@@ -35,7 +35,9 @@ function Nav(){
                 <ul>
                     <li>{iconHeart}</li>
                     <li>{iconUser}</li>
-                    <li>{iconCart}</li>
+                    <Link to='/cart'>
+                        <li>{iconCart}</li>
+                    </Link>
                 </ul>
             </div>
         </div>
