@@ -26,7 +26,11 @@ function Nav(){
                         </li>
                     </Link>
                     <li><p>Shorts</p></li>
-                    <li><p>Brands</p></li>
+                    <Link to='/stores'>
+                        <li>
+                            <p>Stores</p>
+                        </li>
+                    </Link>
                     <li><p>New</p></li>
                     <li>TimaBusiness</li>
                 </ul>

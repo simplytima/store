@@ -9,6 +9,7 @@ import Store from './store/store'
 import Login from './authentication/login'
 import SignupClient from './authentication/clientSign'
 import SignupMerchant from './authentication/signupMerchant'
+import Stores from './stores/stores'
 
 function App() {
   
@@ -23,6 +24,7 @@ function App() {
             <Route path='/item' element={<ItemProduct/>} />
             <Route path='/cart' element={<MyCart/>} />
             <Route path='/store' element={<Store/>} />
+            <Route path='/stores' element={<Stores/>} />
           </Route>
           <Route >
             <Route path='/logIn' element={<Login/>} />
