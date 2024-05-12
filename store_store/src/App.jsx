@@ -10,6 +10,7 @@ import Login from './authentication/login'
 import SignupClient from './authentication/clientSign'
 import SignupMerchant from './authentication/signupMerchant'
 import Stores from './stores/stores'
+import OrderHistory from './order_history/orderHistory'
 
 function App() {
   
@@ -25,6 +26,7 @@ function App() {
             <Route path='/cart' element={<MyCart/>} />
             <Route path='/store' element={<Store/>} />
             <Route path='/stores' element={<Stores/>} />
+            <Route path='/orderHistory' element={<OrderHistory/>} />
           </Route>
           <Route >
             <Route path='/logIn' element={<Login/>} />

@@ -146,6 +146,8 @@ body{
 }
 
 
+
+
 .navbar .nav .navbar .menu ul li{
   display: flex;
   align-items: center;
@@ -1593,6 +1595,8 @@ body{
   margin-top: 20px;
 }
 
+
+
 .catalog .all .items .main .products .productItem .item{
   border-radius: 15px;
   border-radius: 15px;
@@ -1618,6 +1622,11 @@ body{
   padding: 0 5px;
   color: rgb(116, 116, 116);
 }
+.catalog .all .items .main .products .productItem:hover .item .collection p{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 
 
 .catalog .all .items .main .products .productItem .item .info{
@@ -1633,6 +1642,12 @@ body{
 .catalog .all .items .main .products .productItem .item .info p{
   font-weight: 600;
 }
+
+.catalog .all .items .main .products .productItem:hover .item .info p{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 
 
 
@@ -2838,6 +2853,11 @@ body{
   padding: 0 5px;
   color: rgb(116, 116, 116);
 }
+.store .headerMain .main .productItem:hover .product .collection p{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 
 
 .store .headerMain .main .productItem .product .info{
@@ -2855,6 +2875,11 @@ body{
   font-weight: 600;
   margin-bottom: 10px;
 }
+.store .headerMain .main .productItem:hover .product .info p{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 
 
 
@@ -2988,7 +3013,7 @@ body{
 
 .stores .main .brand .img{
   width: 100%;
-  height: 195px;
+  height: 75%;
 }
 .stores .main .brand img{
   width: 100%;
@@ -3024,6 +3049,37 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.orderHistory{
+  width: 80%;
+  margin: auto;
+  padding: 10px 15px;
+  background-color: #a84f37;
+}
 
 
 

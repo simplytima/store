@@ -20,6 +20,11 @@ function Nav(){
             </div>
             <div className="menu">
                 <ul>
+                    <Link to='/'>
+                    <li>
+                        <p>Home</p>
+                    </li>
+                    </Link>
                     <Link to='/catalog'>
                         <li>
                             <p>Catalog</p>
