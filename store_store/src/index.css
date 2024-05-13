@@ -56,6 +56,7 @@ body{
 
 
 
+
 .navbar .aboutContact{
   display: flex;
   justify-content: space-around;
@@ -1833,14 +1834,41 @@ body{
 
 
 .itemProduct .itemDetails .priceItem{
-  /* background-color: #c57533; */
+    /* background-color: #c57533; */
 }
 
+.itemProduct .itemDetails .priceItem .detail a{
+  text-decoration: none;
+}
 
-.itemProduct .itemDetails .priceItem .detail p:first-child{
-  color: rgb(83, 83, 83);
+.itemProduct .itemDetails .priceItem .detail .storeProduct{
+  display: flex;
   margin-bottom: 10px;
+  align-items: center;
 }
+
+.itemProduct .itemDetails .priceItem .detail .storeProduct .icon{
+  background-color: var(--footer);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.itemProduct .itemDetails .priceItem .detail .storeProduct .icon svg{
+  width: 30px;
+  height: 30px;
+}
+
+.itemProduct .itemDetails .priceItem .detail .storeProduct .title{
+  margin-left: 10px;
+}
+
+.itemProduct .itemDetails .priceItem .detail .storeProduct .title p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 17px;  
+  color: #a3a3a3;
+}
+
 
 .itemProduct .itemDetails .priceItem .detail .rating{
   margin-top: 15px;
@@ -1976,12 +2004,16 @@ body{
 }
 .itemProduct .itemDetails .priceItem .chooseMore .size select{
   margin-left: 40px;
-  width: 150px;
+  width: 100px;
+  padding: 5px 10px;
+  font-size: 14px;
   border: none;
-  outline: none;
-  background-color: rgb(234, 234, 234);
   border-radius: 5px;
-  padding: 3px 5px;
+  outline: none;
+  background-color: #fff;
+  border: 0.25px solid #caced1;
+  color: #000;
+  cursor: pointer;
 }
 
 
@@ -2043,14 +2075,109 @@ body{
 
 
 
-
-
 .itemProduct .itemDetails .priceItem .guarantee{
   margin-top: 25px;
 }
 .itemProduct .itemDetails .priceItem .guarantee img{
   width: 100%;
 }
+
+
+
+
+
+
+
+.itemProduct .itemDetails .buyNow{
+  margin-top: 15px;
+  padding: 5px;
+  background-color: var(--footer);
+  display: block;
+}
+.itemProduct .itemDetails .buyNow.active{
+  display: none;
+}
+
+
+
+.itemProduct .itemDetails .buyNow form{
+  display: block;
+}
+
+.itemProduct .itemDetails .buyNow form h2{
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.itemProduct .itemDetails .buyNow form .fullName{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.itemProduct .itemDetails .buyNow form .fullName input{
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+
+.itemProduct .itemDetails .buyNow form .phone{
+  display: block;
+  margin-top: 5px;
+  width: 100%;
+}
+.itemProduct .itemDetails .buyNow form .phone input{
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.itemProduct .itemDetails .buyNow form .adr{
+  display: block;
+  margin-top: 5px;
+  width: 100%;
+}
+.itemProduct .itemDetails .buyNow form .adr input{
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.itemProduct .itemDetails .buyNow form .cityPostal{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 5px;
+}
+.itemProduct .itemDetails .buyNow form .cityPostal input{
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+
+.itemProduct .itemDetails .buyNow form .submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.itemProduct .itemDetails .buyNow form .submit button{
+  padding: 10px 40px;
+  margin-top: 15px;
+  background-color: #000;
+  color: white;
+  font-size: 18px;
+  border: none;
+}
+
+
+
+
 
 
 
@@ -2066,7 +2193,6 @@ body{
 
 
 .itemProduct .similarItems{
-  /* background-color: #8e6457; */
   border-top: 0.25px solid rgb(189, 189, 189);
   margin-top: 30px;
 }
@@ -2089,14 +2215,11 @@ body{
   justify-content: space-between;
   width: 70px;
   align-items: center;
-  /* background-color: #f6f6f6; */
 }
 .itemProduct .similarItems .header .arrow svg{
   width: 25px;
   height: 25px;
 }
-
-
 
 
 
@@ -2114,7 +2237,6 @@ body{
 }
 
 
-
 .itemProduct .similarItems .similar .itemSimilar{
   border-radius: 10px;
 }
@@ -2124,6 +2246,7 @@ body{
   border-radius: 10px;
   border-radius: 10px;
 }
+
 
 .itemProduct .similarItems .similar .itemSimilar .item .img{
   height: 200px;
@@ -2146,6 +2269,11 @@ body{
   padding: 0 5px;
   color: rgb(116, 116, 116);
 }
+.itemProduct .similarItems .similar .itemSimilar .item:hover .collection p{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 
 
 .itemProduct .similarItems .similar .itemSimilar .item .info{
@@ -2163,6 +2291,11 @@ body{
 .itemProduct .similarItems .similar .itemSimilar .item .info p{
   font-weight: 600;
 }
+.itemProduct .similarItems .similar .itemSimilar .item:hover .info p{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 
 
 
@@ -2264,6 +2397,11 @@ body{
   padding: 0 5px;
   color: rgb(116, 116, 116);
 }
+.itemProduct .mightLike .like .itemLike .item:hover .collection p{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 
 
 
@@ -2282,6 +2420,11 @@ body{
 .itemProduct .mightLike .like .itemLike .item .info p{
   font-weight: 600;
 }
+.itemProduct .mightLike .like .itemLike .item:hover .info p{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 
 
 

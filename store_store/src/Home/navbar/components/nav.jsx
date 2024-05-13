@@ -43,7 +43,9 @@ function Nav(){
             <div className="icon">
                 <ul>
                     <li>{iconHeart}</li>
-                    <li>{iconUser}</li>
+                    <Link to='/orderHistory'>
+                        <li>{iconUser}</li>
+                    </Link>
                     <Link to='/cart'>
                         <li>{iconCart}</li>
                     </Link>
