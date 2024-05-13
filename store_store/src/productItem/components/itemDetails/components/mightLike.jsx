@@ -13,7 +13,7 @@ import ItemSimilar from "./itemSimilar"
 function MightLike(){
     return <div className="mightLike">
         <div className="header">
-            <p>Similar Items</p>
+            <p>Might Like</p>
             <div className="arrow">
                 {arrowLeft}
                 {arrowright}

@@ -2187,8 +2187,6 @@ body{
 
 
 .itemProduct .mightLike{
-  /* background-color: #8e6457; */
-  /* border-top: 0.25px solid rgb(189, 189, 189); */
   margin: 30px 0;
   padding-top: 30px;
 }
@@ -2210,7 +2208,6 @@ body{
   justify-content: space-between;
   width: 70px;
   align-items: center;
-  /* background-color: #f6f6f6; */
 }
 .itemProduct .mightLike .header .arrow svg{
   width: 25px;
@@ -2238,15 +2235,12 @@ body{
 
 .itemProduct .mightLike .like .itemLike{
   border-radius: 10px;
-  /* background-color: #fdf8f4; */
 }
 
 
 .itemProduct .mightLike .like .itemLike .item{
   border-radius: 10px;
-  border-radius: 10px;  
-  /* background-color: aquamarine; */
-  /* display: none; */
+  border-radius: 10px;
 }
 
 .itemProduct .mightLike .like .itemLike .item .img{
@@ -2525,7 +2519,6 @@ body{
   padding: 10px;
   height: 180px;
   border: 0.25px solid rgb(190, 190, 190);
-  /* background-color: #f16452; */
 }
 
 .myCart .allArticles .order p:first-child{
@@ -2537,7 +2530,6 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-top: 50px; */
 }
 .myCart .allArticles .order .total p:first-child{
   color: rgb(164, 164, 164);
@@ -3077,9 +3069,181 @@ body{
 .orderHistory{
   width: 80%;
   margin: auto;
-  padding: 10px 15px;
-  background-color: #a84f37;
+  padding: 10px 20px;
+  background-color: #ffffff;
 }
+
+.orderHistory .order {
+  margin-top: 10px;
+}
+
+.orderHistory .order .orderDetails{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-bottom: 0.25px solid rgb(200, 200, 200);
+}
+
+.orderHistory .order .orderDetails .img{
+  width: 220px;
+  height: 120px;
+}
+
+.orderHistory .order .orderDetails .img img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.orderHistory .order .orderDetails .desc{
+  width: 100%;
+  height: 120px;
+  padding: 0 10px ;
+}
+
+.orderHistory .order .orderDetails .desc .titlePrice{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.orderHistory .order .orderDetails .desc .titlePrice .title{
+  width: 500px;
+  overflow: hidden;
+}
+.orderHistory .order .orderDetails .desc .titlePrice .title p{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.orderHistory .order .orderDetails .desc .titlePrice p{
+  font-weight: 600;
+}
+
+.orderHistory .order .orderDetails .desc .description{
+  padding: 5px;
+}
+.orderHistory .order .orderDetails .desc .description p:first-child{
+  font-size: 16px;
+  color: rgb(137, 137, 137);
+}
+.orderHistory .order .orderDetails .desc .description button {
+  background-color: green;
+  border: none;
+  padding: 3px 5px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #ffffff;
+  margin: 5px 0;
+}
+.orderHistory .order .orderDetails .desc .description p:last-child{
+  color:#1c1c1c;
+}
+
+
+
+
+
+
+.orderHistory .items{
+  margin-top: 30px;
+}
+
+
+.orderHistory .items .header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+  padding-top: 30px;
+}
+
+.orderHistory .items .header p{
+  font-weight: 600;
+  font-size: 18px;
+}
+.orderHistory .items .header .arrow{
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+  align-items: center;
+}
+.orderHistory .items .header .arrow svg{
+  width: 25px;
+  height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.orderHistory .items .similar{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 8px;
+  gap: 10px;
+}
+
+
+
+.orderHistory .items .similar .oneItem{
+  border-radius: 10px;
+}
+
+
+.orderHistory .items .similar .oneItem .item{
+  border-radius: 10px;
+  border-radius: 10px;
+}
+
+.orderHistory .items .similar .oneItem .item .img{
+  height: 200px;
+}
+
+.orderHistory .items .similar .oneItem .item .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.orderHistory .items .similar .oneItem .item .collection{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 5px;
+  padding: 0 5px;
+  color: rgb(116, 116, 116);
+}
+
+
+.orderHistory .items .similar .oneItem .item .info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 5px;
+  padding: 0 5px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+
+.orderHistory .items .similar .oneItem .item .info p{
+  font-weight: 600;
+}
+
 
 
 
